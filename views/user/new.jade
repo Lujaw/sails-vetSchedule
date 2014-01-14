@@ -1,0 +1,17 @@
+.create.container
+  form#sign-up-form.form-signin(action='/user/create', method= "POST")
+      h2.form-signin-heading Create an User account
+      div.input-groups
+        input#name(type="text", name="name", placeholder="Enter Full Name")
+      div.input-groups          
+        input#email(type="email", name="email", placeholder="Enter Email")
+      div.input-groups          
+        input#password(type="password", name="password", placeholder="Enter Password")
+      div.input-groups          
+        input(type="password", placeholder="Re-enter Password")
+      div.input-groups          
+        input#address(type="text", name="address", placeholder="Enter Address")
+      div.input-groups          
+        input#createBtn(type='submit', value='create' )
+        input(type='hidden', value='value' ,name="_csrf" )     
+
