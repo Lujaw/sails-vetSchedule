@@ -28,7 +28,7 @@ module.exports = {
 
 		address: {
 			type: 'STRING',
-			required: true
+			// required: true
 		},
 
 		type: {

@@ -1,1 +1,19 @@
 h1 List of all the users
+div.container
+  h3 User Administration
+  table.user-table
+    tr
+      th
+      th ID
+      th Name
+      th
+      th
+      th
+    each user, i in users
+     tr 
+      td  
+      td= user.id 
+      td= user.name   
+      td= user.type   
+      td= user.address   
+

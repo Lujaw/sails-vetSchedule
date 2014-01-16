@@ -26,13 +26,13 @@ module.exports = {
 	 */
 	index: function(req, res, next) {
 		console.log("index action reached");
-		// User.find(function findUsers(err, users) {
-		// 	if (err) return next(err);
-		// 	res.view({
-		// 		users: users
-		// 	});
-		// });
-		res.view();
+		User.find(function findUsers(err, users) {
+			if (err) return next(err);
+			console.log(users);
+			res.view({
+				users: users
+			});
+		});
 	},
 
 
